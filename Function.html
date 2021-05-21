@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Function Task</title>
+    <link rel="stylesheet" href="function.js">
+</head>
+<body>
+    <p>
+		Zuri JavaScript Function Task
+	</p>
+	<span>TASK ONE:Convert Fahr TO Celsius </span>
+	<h1 id="h1"> </h1>
+	<span>TASK TWO: </span>
+	<h2 id="h2"></h2>
+
+
+	<script>
+		//THE FIRSST TASK
+		function celsiusToFahrenheit(celsius) {
+    return celsius * 9/5 + 32;
+} 
+
+function fahrenheitToCelsius(fahrenheit) {
+   return (fahrenheit - 32) * 5/9;
+   
+}
+ document.getElementById("h1").innerHTML= ("ConvertFahrToCelsius(0) should return " + "= " + fahrenheitToCelsius(0).toFixed(4));
+
+
+
+
+//THE SECOND ASSIGNMENT STARTS HERE
+function checkYuGiOh(n){
+let sum = [1];
+
+
+for (var i = 1; i <= n; i++) {
+	if (i % 2  === 0){
+		return ("Yu");
+	} else if( i % 3  === 0){
+		return ("Gi");
+	} else if (i % 5  === 0) {
+		return ("Oh");
+	} else if (i % 2  === 0 && i % 3  === 0) {
+		return ("Yu-Gi");
+	} else if (i % 2  === 0 && i % 5  === 0) {
+		return ("Yu-Oh");
+	} else if (i % 2  === 0 && i % 3  === 0 && i % 5  === 0) {
+		return ("Yu-Gi-Oh");
+	}{
+		sum += i;
+	}
+}
+return sum;
+}
+
+document.getElementById("h2").innerHTML= ("checkYuGiOh(8) " + "= " + checkYuGiOh(8));
+
+	</script>
+
+</body>
+</html>
